@@ -17,6 +17,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".UserActivity"></activity>
+        <activity android:name=".NewStuffActivity"></activity>
+        <activity android:name=".GetStuffActivity"></activity>
+        <activity android:name=".NewPersonActivity"></activity>
+        <activity android:name=".BorrowListActivity"></activity>
+        <activity android:name=".BorrowActivity"></activity>
+        <activity android:name=".EditStuffActivity"></activity>
+        <activity android:name=".EditPersonActivity"></activity>
     </application>
 
 </manifest>

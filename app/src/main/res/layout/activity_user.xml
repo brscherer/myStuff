@@ -4,15 +4,133 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="brscherer.github.com.mystuff.UserActivity">
+    tools:context="brscherer.github.com.mystuff.UserActivity"
+    tools:layout_editor_absoluteY="25dp">
 
-    <TextView
-        android:id="@+id/tvUser"
-        android:layout_width="280dp"
-        android:layout_height="36dp"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="184dp" />
+    <ImageView
+        android:id="@+id/imgAddStuff"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="39dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgGetStuff"
+        app:layout_constraintEnd_toStartOf="@+id/btnAddStuff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/add_stuff" />
 
+    <ImageView
+        android:id="@+id/imgGetStuff"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="38dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgAddPeople"
+        app:layout_constraintEnd_toStartOf="@+id/btnAddPerson"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgAddStuff"
+        app:srcCompat="@drawable/add_people" />
+
+    <ImageView
+        android:id="@+id/imgAddPeople"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="37dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgGetBlacklist"
+        app:layout_constraintEnd_toStartOf="@+id/btnBorrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgGetStuff"
+        app:srcCompat="@drawable/baseline_work_black_18dp" />
+
+    <ImageView
+        android:id="@+id/imgGetBlacklist"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="27dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgBorrow"
+        app:layout_constraintEnd_toStartOf="@+id/btnGetStuff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgAddPeople"
+        app:srcCompat="@drawable/get_stuff" />
+
+    <ImageView
+        android:id="@+id/imgBorrow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnBlacklist"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgGetBlacklist"
+        app:srcCompat="@drawable/get_stuff" />
+
+    <Button
+        android:id="@+id/btnAddStuff"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:text="New Stuff"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddPerson"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgAddStuff"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnGetStuff"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="25dp"
+        android:text="View Stuff"
+        app:layout_constraintBottom_toTopOf="@+id/btnBlacklist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgGetBlacklist"
+        app:layout_constraintTop_toBottomOf="@+id/btnBorrow" />
+
+    <Button
+        android:id="@+id/btnAddPerson"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="38dp"
+        android:text="New Person"
+        app:layout_constraintBottom_toTopOf="@+id/btnBorrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgGetStuff"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddStuff" />
+
+    <Button
+        android:id="@+id/btnBlacklist"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="70dp"
+        android:text="View Borrows"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgBorrow"
+        app:layout_constraintTop_toBottomOf="@+id/btnGetStuff" />
+
+    <Button
+        android:id="@+id/btnBorrow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="37dp"
+        android:text="Borrow"
+        app:layout_constraintBottom_toTopOf="@+id/btnGetStuff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgAddPeople"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddPerson" />
 </android.support.constraint.ConstraintLayout>

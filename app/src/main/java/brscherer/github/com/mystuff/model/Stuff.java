@@ -5,6 +5,15 @@ public class Stuff {
     private String name;
     private Boolean borrowed;
 
+    public Stuff(String name){
+        this.name = name;
+        this.borrowed = false;
+    }
+
+    public Stuff() {
+
+    }
+
     public Long getId() {
         return id;
     }
